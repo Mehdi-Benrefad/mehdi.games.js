@@ -1,6 +1,7 @@
 var solider = document.getElementById("solider");
 var bombe = document.getElementById("bombe");
 var counter=0;
+
 function jump(){
     if(solider.classList == "animate"){return}
     solider.classList.add("animate");
@@ -21,7 +22,7 @@ function animatebomb(){
 var gameover = setInterval(function() {
     let soliderTop = parseInt(window.getComputedStyle(solider).getPropertyValue("top"));
     let bombeLeft = parseInt(window.getComputedStyle(bombe).getPropertyValue("left"));
-    if(bombeLeft<50 && bombeLeft>0 && soliderTop>=130){
+    if(bombeLeft<50 && bombeLeft>10 && soliderTop>=130){
         bombe.style.animation = "none";
         alert("Game Over. score: "+Math.floor(counter/100));
         counter=0;
