@@ -21,7 +21,7 @@ function animatebomb(){
 var gameover = setInterval(function() {
     let soliderTop = parseInt(window.getComputedStyle(solider).getPropertyValue("top"));
     let bombeLeft = parseInt(window.getComputedStyle(bombe).getPropertyValue("left"));
-    if(bombeLeft<20 && bombeLeft>-20 && soliderTop>=130){
+    if(bombeLeft<50 && bombeLeft>0 && soliderTop>=130){
         bombe.style.animation = "none";
         alert("Game Over. score: "+Math.floor(counter/100));
         counter=0;

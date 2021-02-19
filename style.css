@@ -25,6 +25,7 @@
     height: 50px;
     position:relative;
     top: 150px;
+    left: 50px;
 }
 .animate{
     animation: jump 0.3s linear;
@@ -49,7 +50,7 @@
     display:none;
 }
 .animatebomb{
-    animation: bombe 1s infinite linear;
+    animation: bombe 2s infinite linear;
 }
 @keyframes bombe{
     0%{left: 500px}
