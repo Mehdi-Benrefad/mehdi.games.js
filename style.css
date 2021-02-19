@@ -1,0 +1,62 @@
+*{
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+}
+.startbutton{
+    color:#ddd;
+    background-color: green;
+    width: 10%;
+    height: 50px;
+    margin-left: 45%;
+}
+.consignes{
+    width: 50%;
+    margin-left: 25%;
+}
+.container{
+    width: 500px;
+    height: 200px;
+    border: 1px solid black;
+    margin: auto;
+}
+#solider{
+    width: 20px;
+    height: 50px;
+    position:relative;
+    top: 150px;
+}
+.animate{
+    animation: jump 0.3s linear;
+}
+@keyframes jump{
+    0%{top: 150px;}
+    30%{top: 100px;}
+    70%{top: 100px;}
+    100%{top: 150px;}
+}
+
+#bombe{
+    width: 20px;
+    height: 20px;
+    position: relative;
+    top: 130px;
+    left: 500px;
+ /*   animation: bombe 1s infinite linear;*/
+}
+
+#score{
+    display:none;
+}
+.animatebomb{
+    animation: bombe 1s infinite linear;
+}
+@keyframes bombe{
+    0%{left: 500px}
+    100%{left: -20px}
+}
+p{
+    text-align: center;
+}
+
+

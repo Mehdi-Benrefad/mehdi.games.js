@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html  lang="en">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="topnav.css">
+<link rel="stylesheet" href="footer.css">
+<style>
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+
+</style>
+</head>
+<body>
+
+<div class="topnav" id="myTopnav">
+  <a href="index.html" style="float:left;" ><b><i style="color:green">Mehdi</i>.games</b></a>
+  <a href="#news" class="active">Jump Game</a>
+  <a href="#contact">Snake</a>
+  <a href="#about">Smart Game</a>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+</div>
+<br><br>
+<div class="consignes">
+    <h3 style="text-align: center;">Consignes:</h3>
+    <ul>
+        <li>1- Taper Start pour commencer le jeux</li>
+        <li>2- Cliquer sur l'ecran du jeux pour sauter et eviter la bombe</li>
+        <li>3- Votre score final depend du nombre de fois que vous reussissez a eviter la bombe</li>
+    </ul>
+</div>
+
+<br><br><br>
+
+<div class="container" onclick="jump()">
+    <img width="20" height="50" src="soldier.png" id="solider">
+    <img width="20" height="50" src="bombe.png" id="bombe">
+    
+</div>
+<p>Score: <span id="score"></span></p>
+<button class="startbutton" onclick="animatebomb()">Start</button>
+<br><br><br><br><br>
+<h3 style="text-align: center;"><i style="color: green;">Created by:</i> MEHDI BENREFAD</h3>
+
+<br><br><br>
+
+
+<footer>
+  <div class="footer">
+  <div class="row">
+    <a href="https://github.com/Mehdi-Benrefad"><i class="fa fa-github"></i></a>
+    <a href="#"><i class="fa fa-youtube"></i></a>
+    <a href="https://www.linkedin.com/in/mehdi-benrefad-353460ba/"><i class="fa fa-linkedin"></i></a>
+    <a href="mailto:benrefadmehdi@gmail.com"><i class="fa fa-google"></i></a>
+  </div>
+  
+  <div class="row">
+  <ul>
+  <li><a href="#">Our Services</a></li>
+  <li><a href="#">Privacy Policy</a></li>
+  <li><a href="#">Terms & Conditions</a></li>
+  </ul>
+  </div>
+
+  <div class="row">
+    <h3 style="text-align: center;"><i style="color: green;">Created by: &nbsp;</i> MEHDI BENREFAD</h3>
+  </div>
+  
+
+  </div>
+  </footer>
+
+
+</body>
+<script src="script.js"></script>
+<script src="topnav.js"></script>
+</html>
