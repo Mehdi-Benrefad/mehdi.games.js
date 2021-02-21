@@ -10,7 +10,7 @@ body {
     font-family:Roboto;
     background: #EEEEF4;
   }
-  
+
 .startbutton{
     color:#ddd;
     background-color: green;
@@ -25,9 +25,26 @@ body {
 .container{
     width: 500px;
     height: 200px;
-    border: 1px solid black;
+    border: 5px solid black;
     margin: auto;
+    
 }
+.support1{
+    width: 15px;
+    height: 50px;
+    border: 5px solid black;
+    margin: auto;
+    background-color: black;
+}
+
+.support2{
+    width: 90px;
+    height: 5px;
+    border: 5px solid black;
+    margin: auto;
+    background-color: black;
+}
+
 #solider{
     width: 20px;
     height: 50px;
