@@ -25,10 +25,35 @@ body {
 .container{
     width: 500px;
     height: 200px;
-    border: 5px solid black;
+    border: 7px solid black;
     margin: auto;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
     
 }
+
+.support0{
+    width: 500px;
+    
+    border: 7px solid black;
+    border-bottom: 14px solid black;
+    margin: auto;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    background-color: black;
+    
+   
+}
+
+.btnsupport{
+    width: 7px;
+    height: 7px;
+    background-color: white;
+    margin: auto;
+    border-radius: 100%;
+    
+}
+
 .support1{
     width: 15px;
     height: 50px;
@@ -43,6 +68,7 @@ body {
     border: 5px solid black;
     margin: auto;
     background-color: black;
+    border-radius: 5px;
 }
 
 #solider{
