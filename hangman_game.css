@@ -1,0 +1,63 @@
+
+#page {
+	background-color:#EEEEF4;
+	text-align:left;
+	width:60%;
+	padding:30px;
+	height:450px;
+}
+
+
+
+
+
+
+
+#mot {
+	margin:30px 0 0 0;
+	clear:both;
+	top:100px;
+}
+
+#mot td {
+	padding:10px;
+	background-color:#1ee193;
+	border:2px inset black;
+	width:30px;
+	height:30px;
+	font-weight:bold;
+	font-size:1.5em;
+	text-align:center;
+}
+
+ #mot p{
+	visibility:hidden;
+}
+
+#clavier{
+	border:4px outset black;
+	padding:10px;
+	background-color:#2b80d5;
+}
+
+#clavier td {
+	background-color:white;
+	border:1px solid black;
+	width:25px;
+	height:25px;
+	text-align:center;
+	font-weight:bold;
+	cursor:pointer;
+}
+
+a.lien{
+	color:blue;
+	text-decoration:none;
+	font-size:20px;
+}
+
+a.lien:hover{
+	color:red;
+	font-weight:bold;
+	text-decoration:underline;
+}
