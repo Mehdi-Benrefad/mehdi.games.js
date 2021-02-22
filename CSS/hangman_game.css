@@ -8,24 +8,18 @@
 
 .bloc1{
 	display: flex;
+	width: 100%;
+	flex-wrap: wrap;
 }
 
 @media screen and (max-width: 800px) {
 	.bloc1{
 		display: flex;
 		flex-direction: column;
+		width: 100%;
 	}
 
-	#mot td {
-		padding:10px;
-		background-color:rgb(142, 216, 142);
-		border:2px inset black;
-		width:20px;
-		height:20px;
-		font-weight:bold;
-		font-size:1.5em;
-		text-align:center;
-	}
+
 	#mot {
 		margin:10px 0 0 0;
 		clear:both;
@@ -43,11 +37,16 @@
 	padding:10px;
 	background-color:rgb(142, 216, 142);
 	border:2px inset black;
-	width:30px;
+	width:18px;
 	height:30px;
 	font-weight:bold;
 	font-size:1.5em;
 	text-align:center;
+}
+
+#mot tr {
+	display:flex;
+	
 }
 
  #mot p{
