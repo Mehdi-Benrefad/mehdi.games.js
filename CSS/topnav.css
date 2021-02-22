@@ -14,7 +14,7 @@
     font-size: 17px;
   }
   
-  .topnav a:hover {
+  .topnav a:not(:first-child):hover {
     background-color: #ddd;
     color: black;
   }
