@@ -46,7 +46,7 @@
 
 #mot tr {
 	display:flex;
-	
+	flex-wrap: wrap;
 }
 
  #mot p{
