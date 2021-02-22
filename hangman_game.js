@@ -9,19 +9,19 @@ var motSecret;
 				var lettresTrouvees=0;		// Le nombre de lettres trouv�es
 				var fini=false;				// true si le jeu est termin�
 				
-				mots[0]="TITANESQUE";
-				mots[1]="ANABELLE";
+				mots[0]="BENREFAD";
+				mots[1]="INGENIEUR";
 				mots[2]="POMPIER";
-				mots[3]="OBELISQUE";
+				mots[3]="TECHNICIEN";
 				mots[4]="PLACARD";
-				mots[5]="RADIATEUR";
-				mots[6]="DEODORANT";
-				mots[7]="CAMION";
+				mots[5]="MANGER";
+				mots[6]="PROGRAMMATION";
+				mots[7]="VOITURE";
 				mots[8]="HORLOGE";
-				mots[9]="MARGUERITE";
-				mots[10]="ELEPHANT";
-				mots[11]="IGLOO";
-				mots[12]="NAVIRE";
+				mots[9]="ORDINATEUR";
+				mots[10]="IDIOT";
+				mots[11]="VALIDATION";
+				mots[12]="RATTRAPPAGE";
 				
 				// On prend un mot au hasard en fonction de la seconde en cours
 				motSecret=mots[now.getSeconds() % mots.length];

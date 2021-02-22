@@ -15,6 +15,22 @@
 		display: flex;
 		flex-direction: column;
 	}
+
+	#mot td {
+		padding:10px;
+		background-color:rgb(142, 216, 142);
+		border:2px inset black;
+		width:20px;
+		height:20px;
+		font-weight:bold;
+		font-size:1.5em;
+		text-align:center;
+	}
+	#mot {
+		margin:10px 0 0 0;
+		clear:both;
+		top:100px;
+	}
 }
 
 #mot {
