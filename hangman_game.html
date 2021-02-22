@@ -22,118 +22,118 @@
 		
 	</head>
 
-<body>
+	<body>
 
-	<div class="topnav" id="myTopnav">
-		<a href="index.html" style="float:left;" ><b><i style="color:green">Mehdi</i>.games</b></a>
-		<a href="jump-game.html" >Jump Game</a>
-		<a href="#news" class="active">hangman game</a>
-		<a href="under_construction.html">Snake</a>
-		<a href="under_construction.html">Smart Game</a>
-		<a href="javascript:void(0);" class="icon" onclick="myFunction()">
-		  <i class="fa fa-bars"></i>
-		</a>
-	</div>
-<center>
-	<br><br><br>
+			<div class="topnav" id="myTopnav">
+				<a href="index.html" style="float:left;" ><b><i style="color:green">Mehdi</i>.games</b></a>
+				<a href="jump-game.html" >Jump Game</a>
+				<a href="#news" class="active">hangman game</a>
+				<a href="under_construction.html">Snake</a>
+				<a href="under_construction.html">Smart Game</a>
+				<a href="javascript:void(0);" class="icon" onclick="myFunction()">
+				<i class="fa fa-bars"></i>
+				</a>
+			</div>
+		<center>
+			<br><br><br>
 
-	<h3 style="color: green;">Consignes</h3>
+			<h3 style="color: green;">Consignes</h3>
 
-	<h4>Entrez une lettre grace au clavier ci-dessous ; si elle est dans le mot secret, elle sera affichee mais sinon la sentence se rapprochera !</h4>
-	<br><br><br>
+			<h4>Entrez une lettre grace au clavier ci-dessous ; si elle est dans le mot secret, elle sera affichee mais sinon la sentence se rapprochera !</h4>
+			<br><br><br>
 
-	<div id="page" class="bloc1">
-	
+			<div id="page" class="bloc1">
 			
-			<br><br>
+					
+					<br><br>
 
-			<div style="display: flex;flex-direction:column;margin-right:10%">
-						<br>
-						
-					<table id="clavier">
-					<tr>
-					<td onclick="proposer(this);" >A</td>
-					<td onclick="proposer(this);" >B</td>
-					<td onclick="proposer(this);" >C</td>
-					<td onclick="proposer(this);" >D</td>
-					<td onclick="proposer(this);" >E</td>
-					<td onclick="proposer(this);" >F</td>
-					<td onclick="proposer(this);" >G</td>
-					<td onclick="proposer(this);" >H</td>
-					<td onclick="proposer(this);" >I</td>
-					<td onclick="proposer(this);" >J</td>
-					</tr>
-					<tr>
-					<td onclick="proposer(this);" >K</td>
-					<td onclick="proposer(this);" >L</td>
-					<td onclick="proposer(this);" >M</td>
-					<td onclick="proposer(this);" >N</td>
-					<td onclick="proposer(this);" >O</td>
-					<td onclick="proposer(this);" >P</td>
-					<td onclick="proposer(this);" >Q</td>
-					<td onclick="proposer(this);" >R</td>
-					<td onclick="proposer(this);" >S</td>
-					<td onclick="proposer(this);" >T</td>
-					</tr>
-					<tr>
-					<td onclick="proposer(this);" >U</td>
-					<td onclick="proposer(this);" >V</td>
-					<td onclick="proposer(this);" >W</td>
-					<td onclick="proposer(this);" >X</td>
-					<td onclick="proposer(this);" >Y</td>
-					<td onclick="proposer(this);" >Z</td>
-					</tr>
-					</table>
-					<br>
-						
-						<br>
-						
-					<a href="javascript:location.reload();"><button class="lien">Nouvelle partie</button></a>
-						
-						
-						<br>
-					<table id="mot">
-						<tr>
-							<script language="javascript">
-								for(var i=0; i<tailleMot; i++) document.write("<td> <p id=\""+i+"\">"+motSecret.charAt(i)+"</p></td>");
-							</script>
-						</tr>
-					</table>
-				</div>
-				<br><br><br>
-				<img name="pendu" class="pendu" src="images/pendu/0.jpg">
-	</div>
+					<div style="display: flex;flex-direction:column;margin-right:10%">
+								<br>
+								
+							<table id="clavier">
+							<tr>
+							<td onclick="proposer(this);" >A</td>
+							<td onclick="proposer(this);" >B</td>
+							<td onclick="proposer(this);" >C</td>
+							<td onclick="proposer(this);" >D</td>
+							<td onclick="proposer(this);" >E</td>
+							<td onclick="proposer(this);" >F</td>
+							<td onclick="proposer(this);" >G</td>
+							<td onclick="proposer(this);" >H</td>
+							<td onclick="proposer(this);" >I</td>
+							<td onclick="proposer(this);" >J</td>
+							</tr>
+							<tr>
+							<td onclick="proposer(this);" >K</td>
+							<td onclick="proposer(this);" >L</td>
+							<td onclick="proposer(this);" >M</td>
+							<td onclick="proposer(this);" >N</td>
+							<td onclick="proposer(this);" >O</td>
+							<td onclick="proposer(this);" >P</td>
+							<td onclick="proposer(this);" >Q</td>
+							<td onclick="proposer(this);" >R</td>
+							<td onclick="proposer(this);" >S</td>
+							<td onclick="proposer(this);" >T</td>
+							</tr>
+							<tr>
+							<td onclick="proposer(this);" >U</td>
+							<td onclick="proposer(this);" >V</td>
+							<td onclick="proposer(this);" >W</td>
+							<td onclick="proposer(this);" >X</td>
+							<td onclick="proposer(this);" >Y</td>
+							<td onclick="proposer(this);" >Z</td>
+							</tr>
+							</table>
+							<br>
+								
+								<br>
+								
+							<a href="javascript:location.reload();"><button class="lien">Nouvelle partie</button></a>
+								
+								
+								<br>
+							<table id="mot">
+								<tr>
+									<script language="javascript">
+										for(var i=0; i<tailleMot; i++) document.write("<td> <p id=\""+i+"\">"+motSecret.charAt(i)+"</p></td>");
+									</script>
+								</tr>
+							</table>
+						</div>
+						<br><br><br>
+						<img name="pendu" class="pendu" src="images/pendu/0.jpg">
+			</div>
 
-	<script language="javascript">
-		for(var i=0; i<tailleMot; i++) tableauMot[i]=document.getElementById(i);
-	</script>
+			<script language="javascript">
+				for(var i=0; i<tailleMot; i++) tableauMot[i]=document.getElementById(i);
+			</script>
 
-<center>
-</div>
+		</center>
+		</div>
 
-<footer>
-	<div class="footer">
-	<div class="row">
-	  <a href="https://github.com/Mehdi-Benrefad"><i class="fa fa-github"></i></a>
-	  <a href="#"><i class="fa fa-youtube"></i></a>
-	  <a href="https://www.linkedin.com/in/mehdi-benrefad-353460ba/"><i class="fa fa-linkedin"></i></a>
-	  <a href="mailto:benrefadmehdi@gmail.com"><i class="fa fa-google"></i></a>
-	</div>
-	
-	<div class="row">
-	<ul>
-	<li><a href="#">Our Services</a></li>
-	<li><a href="#">Privacy Policy</a></li>
-	<li><a href="#">Terms & Conditions</a></li>
-	</ul>
-	</div>
-  
-	<div class="row">
-	  <h3 style="text-align: center;"><i style="color: green;">Created by: &nbsp;</i> MEHDI BENREFAD</h3>
-	</div>
-	
-  
-	</div>
-	</footer>
-</body>
+		<footer>
+			<div class="footer">
+			<div class="row">
+			<a href="https://github.com/Mehdi-Benrefad"><i class="fa fa-github"></i></a>
+			<a href="#"><i class="fa fa-youtube"></i></a>
+			<a href="https://www.linkedin.com/in/mehdi-benrefad-353460ba/"><i class="fa fa-linkedin"></i></a>
+			<a href="mailto:benrefadmehdi@gmail.com"><i class="fa fa-google"></i></a>
+			</div>
+			
+			<div class="row">
+				<ul>
+					<li><a href="#">Our Services</a></li>
+					<li><a href="#">Privacy Policy</a></li>
+					<li><a href="#">Terms & Conditions</a></li>
+				</ul>
+			</div>
+		
+			<div class="row">
+				<h3 style="text-align: center;"><i style="color: green;">Created by: &nbsp;</i> MEHDI BENREFAD</h3>
+			</div>
+			
+		
+			</div>
+		</footer>
+	</body>
 </html>
