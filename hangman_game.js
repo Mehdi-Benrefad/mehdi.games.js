@@ -17,7 +17,7 @@ var motSecret;
 				mots[5]="MANGER";
 				mots[6]="PROGRAMMATION";
 				mots[7]="VOITURE";
-				mots[8]="HORLOGE";
+				mots[8]="AJOURNER";
 				mots[9]="ORDINATEUR";
 				mots[10]="IDIOT";
 				mots[11]="VALIDATION";
