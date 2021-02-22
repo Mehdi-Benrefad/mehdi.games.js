@@ -1,17 +1,21 @@
 
 #page {
 	background-color:#EEEEF4;
-	text-align:left;
-	width:60%;
+	width:80%;
 	padding:30px;
-	height:450px;
+	
 }
 
+.bloc1{
+	display: flex;
+}
 
-
-
-
-
+@media screen and (max-width: 800px) {
+	.bloc1{
+		display: flex;
+		flex-direction: column;
+	}
+}
 
 #mot {
 	margin:30px 0 0 0;
@@ -21,7 +25,7 @@
 
 #mot td {
 	padding:10px;
-	background-color:#1ee193;
+	background-color:rgb(142, 216, 142);
 	border:2px inset black;
 	width:30px;
 	height:30px;
@@ -37,7 +41,7 @@
 #clavier{
 	border:4px outset black;
 	padding:10px;
-	background-color:#2b80d5;
+	background-color:rgb(142, 216, 142);
 }
 
 #clavier td {
@@ -51,13 +55,13 @@
 }
 
 a.lien{
-	color:blue;
+	color:green;
 	text-decoration:none;
 	font-size:20px;
 }
 
 a.lien:hover{
-	color:red;
+	color:#EEEEF4;
 	font-weight:bold;
-	text-decoration:underline;
+	text-decoration:none;
 }
