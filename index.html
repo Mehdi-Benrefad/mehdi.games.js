@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="CSS/style.css">
     <link rel="stylesheet" href="CSS/topnav.css">
     <link rel="stylesheet" href="CSS/footer.css">
+    <link rel="stylesheet" href="CSS/loading.css">
     <!--FONT AWESOME-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     
@@ -40,6 +41,19 @@
     </style>
   </head>
   <body>
+      <div class='spinner-wrapper'>
+          <div class="spinner"></div>
+      </div>
+      
+      
+      <script>
+          let spinnerWrapper = document.querySelector('.spinner-wrapper');
+      
+          window.addEventListener('load', function () {
+              // spinnerWrapper.style.display = 'none';
+              spinnerWrapper.parentElement.removeChild(spinnerWrapper);
+          });
+      </script>
 
     <div class="topnav" id="myTopnav">
       <a href="index.html"  style="float:left;" ><b><i style="color:green">Mehdi</i>.games</b></a>
