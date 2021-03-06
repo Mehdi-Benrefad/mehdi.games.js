@@ -148,12 +148,13 @@ button:hover{
     
     .balldiv{
          height: 380px;
+         width:300px;
          
     }
 
     .user{
         background-color: lightgreen;
-        width: 50px;
+        width: 100px;
         height: 20px;
         left: 150px;
         position: relative;
