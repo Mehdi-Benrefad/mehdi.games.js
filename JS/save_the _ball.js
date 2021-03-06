@@ -11,7 +11,7 @@ function mouseupLeft(event) {
      clearInterval(mousedownID);
      mousedownID=-1;
    }
-}
+} 
 function whilemousedownLeft() {
    var left = parseFloat(window.getComputedStyle(user).getPropertyValue("left"));
     if(left > 0){
