@@ -1,6 +1,6 @@
 /*responsive topnav*/
   .topnav {
-    overflow: hidden;
+    overflow: hidden !important;
     background-color: #333;
     position: fixed;
     width: 100%;
