@@ -79,7 +79,7 @@ button:hover{
     cursor: pointer;
 }
 
-@media only screen and (max-width: 600px){
+@media screen and (max-width: 600px){
     .game,.left,.right{
         height: 400px;
         width:400px;
@@ -94,6 +94,47 @@ button:hover{
     @keyframes slideX{
         0%{left:0px;}
         50%{left:400px;}
+        100%{left:0px;}
+    }
+
+    .ball{
+         top:360px;
+    }
+    
+    .balldiv{
+         height: 380px;
+         
+    }
+
+    .user{
+        background-color: lightgreen;
+        width: 120px;
+        height: 20px;
+        left: 150px;
+        position: relative;
+    }
+ }
+
+
+
+
+
+
+ @media screen and (max-width: 400px){
+    .game,.left,.right{
+        height: 400px;
+        width:300px;
+    } 
+
+    @keyframes slideY{
+         0%{top:360px;}
+         50%{top:0px;}
+         100%{top:360px;}
+    }
+
+    @keyframes slideX{
+        0%{left:0px;}
+        50%{left:300px;}
         100%{left:0px;}
     }
 
