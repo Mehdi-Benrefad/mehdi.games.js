@@ -17,7 +17,7 @@
 }
 .user{
     background-color: lightgreen;
-    width: 100px;
+    width: 200px;
     height: 20px;
     left: 150px;
     position: relative;
@@ -52,13 +52,13 @@
 }
 .left{
     z-index: 100;
-    width: var(--fourhundredhalf);
+    width: 500px;
     position: absolute;
     height: 400px;
 }
 .right{
     z-index: 100;
-    width: var(--fourhundredhalf);
+    width: 500px;
     margin-left: 200px;
     position: absolute;
     height: 400px;
@@ -104,5 +104,13 @@ button:hover{
     .balldiv{
          height: 380px;
          
-     }
+    }
+
+    .user{
+        background-color: lightgreen;
+        width: 120px;
+        height: 20px;
+        left: 150px;
+        position: relative;
+    }
  }
