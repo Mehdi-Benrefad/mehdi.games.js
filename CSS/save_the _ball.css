@@ -4,9 +4,7 @@
     --fourhundredhalf: 200px;
 }
 
-body{
-    overflow: hidden !important;
-}
+
 
 *{
     padding: 0;
@@ -148,7 +146,7 @@ button:hover{
     
     .balldiv{
          height: 380px;
-         width:300px;
+         width:150px;
          
     }
 
