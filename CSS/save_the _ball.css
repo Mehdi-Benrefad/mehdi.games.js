@@ -12,7 +12,7 @@
 .game{
     border: 3px solid green;
     height: 400px;
-    width: var(--fourhundred);
+    width: 500px;
     margin: auto;
 }
 .user{
@@ -34,7 +34,7 @@
     animation:slideY 5s infinite linear;
 }
 .balldiv{
-    width: var(--fourhundred);
+    width:500px;
     height: 380px;
     position: relative;
     margin: auto;
@@ -42,7 +42,7 @@
 }
 @keyframes slideX{
     0%{left:0px;}
-    50%{left:var(--fourhundredminustwenty);}
+    50%{left:500px;}
     100%{left:0px;}
 }
 @keyframes slideY{
@@ -79,3 +79,30 @@ button:hover{
     cursor: pointer;
 }
 
+@media only screen and (max-width: 600px){
+    .game,.left,.right{
+        height: 400px;
+        width:400px;
+    } 
+
+    @keyframes slideY{
+         0%{top:360px;}
+         50%{top:0px;}
+         100%{top:360px;}
+    }
+
+    @keyframes slideX{
+        0%{left:0px;}
+        50%{left:400px;}
+        100%{left:0px;}
+    }
+
+    .ball{
+         top:360px;
+    }
+    
+    .balldiv{
+         height: 380px;
+         
+     }
+ }
