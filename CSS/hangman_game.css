@@ -70,14 +70,17 @@
 	cursor:pointer;
 }
 
-a.lien{
-	color:green;
-	
-	font-size:20px;
+#new{
+	color: green;
+    font-size: 2rem;
+    padding: 0.5rem 2rem;
+    border: 3px solid green;
+    border-radius: 0.3rem;
+    margin: 1rem auto;
 }
 
-a.lien:hover{
-	color:#EEEEF4;
-	font-weight:bold;
-	text-decoration:none;
+#new:hover{
+    background-color: green;
+    color: white;
+    cursor: pointer;
 }
