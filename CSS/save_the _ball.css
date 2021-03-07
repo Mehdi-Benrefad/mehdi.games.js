@@ -4,7 +4,7 @@
     --fourhundredhalf: 200px;
 }
 
-
+ 
 
 *{
     padding: 0;
@@ -100,11 +100,11 @@ button:hover{
     }
 
     .ball{
-         top:360px;
+        top:360px;
     }
     
     .balldiv{
-         height: 380px;
+        height: 380px;
          
     }
 
