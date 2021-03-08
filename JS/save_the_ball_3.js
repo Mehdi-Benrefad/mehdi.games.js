@@ -28,6 +28,7 @@ document.addEventListener("keydown", event => {
         }
     }
 });
+
 document.addEventListener("keyup", event => {
     clearInterval(interval);
     both=0;
@@ -38,10 +39,12 @@ function start(){
 var blocks = setInterval(function(){
     var blockLast = document.getElementById("block"+(counter-1));
     var holeLast = document.getElementById("hole"+(counter-1));
+
     if(counter>0){
         var blockLastTop = parseInt(window.getComputedStyle(blockLast).getPropertyValue("top"));
         var holeLastTop = parseInt(window.getComputedStyle(holeLast).getPropertyValue("top"));
     }
+
     if(blockLastTop<400||counter==0){
         var block = document.createElement("div");
         var hole = document.createElement("div");

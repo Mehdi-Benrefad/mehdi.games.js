@@ -10,6 +10,15 @@ function jump(){
     },300);
 }
 
+document.addEventListener("keydown", event => {
+
+    if (event.key === 'Enter' ||event.key === 'a' || event.key === 'z') {
+       jump();
+      }
+    
+    
+});
+
 
 function animatebomb(){
     bombe.classList.add("animatebomb");
