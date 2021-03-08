@@ -49,10 +49,10 @@ var gameover = setInterval(function() {
         score.style.display="none";
         //bombe.style.animation = "bombe 1s infinite linear";
         bombe.classList.remove("animatebomb");
-        
+      
     }else{
         counter++;
         document.getElementById("score").innerHTML = Math.floor(counter/100);
     }
+    
 }, 10);
-

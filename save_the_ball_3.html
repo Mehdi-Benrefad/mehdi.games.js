@@ -1,9 +1,10 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
+    <title>Fall game</title>
+    <link rel="stylesheet" href="CSS/save_the_ball_3.css">
     <title>Save the ball</title>
-    <link rel="stylesheet" href="CSS/save_the_ball_2.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="CSS/topnav.css">
     <link rel="stylesheet" href="CSS/footer.css">
@@ -19,7 +20,6 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="CSS/under_construction.css">
 
-    
 </head>
 <body>
 
@@ -44,8 +44,8 @@
       <h3 style="text-align: center; color:green">Consignes:</h3>
         <ul style="list-style-type: none;">
             
-          <li>1- Cliquer sur l'ecran  pour bouger la balle vers le haut et la sauver .</li>
-          <li>2- Passer la balle dans la zone blanche, et eviter de toucher les batons noirs.</li>
+          <li>1- Cliquer sur les fleches du clavier a droite et a gauche  pour bouger la balle </li>
+          <li>2- Passer la balle dans la zone blanche, et eviter de toucher le sommet.</li>
           <li>3- Votre score final depend du nombre de fois que vous reussissez a sauver la balle</li>
         </ul>
     </div>
@@ -53,48 +53,39 @@
     <br><br><br>
 
 
-    <div id="game" onclick="jump()">
-        <div id="block"></div>
-        <div id="hole"></div>
-        <div id="character"></div>
-    </div>
-    <button id="restart" onclick="start()">start</button>
+
+<div id="game">
+    <div id="character"></div>
+</div>
     
+<button id="restart" onclick="start()">start</button>
 
+<br><br><br>
+<footer>
+    <div class="footer">
+      <div class="row">
+        <a href="https://github.com/Mehdi-Benrefad"><i class="fa fa-github"></i></a>
+        <a href="#"><i class="fa fa-youtube"></i></a>
+        <a href="https://www.linkedin.com/in/mehdi-benrefad-353460ba/"><i class="fa fa-linkedin"></i></a>
+        <a href="mailto:benrefadmehdi@gmail.com"><i class="fa fa-google"></i></a>
+      </div>
+    
+      <div class="row">
+        <ul>
+          <li><a href="#">Our Services</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Terms & Conditions</a></li>
+        </ul>
+      </div>
 
+      <div class="row">
+        <h3 style="text-align: center;"><i style="color: green;">Created by: &nbsp;</i> MEHDI BENREFAD</h3>
+      </div>
+      
 
-    <br><br><br>
-
-
-
-    <footer>
-        <div class="footer">
-          <div class="row">
-            <a href="https://github.com/Mehdi-Benrefad"><i class="fa fa-github"></i></a>
-            <a href="#"><i class="fa fa-youtube"></i></a>
-            <a href="https://www.linkedin.com/in/mehdi-benrefad-353460ba/"><i class="fa fa-linkedin"></i></a>
-            <a href="mailto:benrefadmehdi@gmail.com"><i class="fa fa-google"></i></a>
-          </div>
-        
-          <div class="row">
-            <ul>
-              <li><a href="#">Our Services</a></li>
-              <li><a href="#">Privacy Policy</a></li>
-              <li><a href="#">Terms & Conditions</a></li>
-            </ul>
-          </div>
-  
-          <div class="row">
-            <h3 style="text-align: center;"><i style="color: green;">Created by: &nbsp;</i> MEHDI BENREFAD</h3>
-          </div>
-          
-  
-        </div>
-    </footer>
-
-
-
+    </div>
+</footer>
 </body>
-<script src="JS/save_the_ball_2.js"></script>
+<script src="JS/save_the_ball_3.js"></script>
 <script src="JS/topnav.js"></script>
 </html>
