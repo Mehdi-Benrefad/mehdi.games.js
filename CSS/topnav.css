@@ -2,8 +2,7 @@
   .topnav {
     overflow: hidden !important;
     background-color: #333;
-    position: fixed;
-    width: 100%;
+    
   }
   
   #enable_topnav_link{
