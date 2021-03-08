@@ -38,7 +38,7 @@ function start(){
     block.classList.add('animate');
     hole.classList.add('animate');
     st=true;
-    character.style.top = 100 + "px";
+    character.style.top = 200 + "px";
 
    
 }
