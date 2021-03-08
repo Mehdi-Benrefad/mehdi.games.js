@@ -1,0 +1,65 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+#game{
+    width: 400px;
+    height: 500px;
+    border: 3px solid green;
+    margin: auto;
+    overflow: hidden;
+    top:30%;
+    position: relative;
+    
+}
+
+#restart
+{
+    color: green;
+    font-size: 2rem;
+    padding: 0.5rem 2rem;
+    border: 3px solid green;
+    border-radius: 0.3rem;
+    margin: 1rem auto;
+    margin-left: 45%;
+}
+
+#restart:hover{
+    background-color: green;
+    color: white;
+    cursor: pointer;
+}
+
+#block{
+    width: 50px;
+    height: 500px;
+    background-color: black;
+    position: relative;
+    left: 400px;
+    
+}
+@keyframes block{
+    0%{left:400px}
+    100%{left:-50px}
+}
+
+.animate{
+    animation: block 2s infinite linear;
+}
+#hole{
+    width: 50px;
+    height: 150px;
+    background-color: white;
+    position: relative;
+    left: 400px;
+    top: -500px;
+    
+}
+#character{
+    width: 20px;
+    height: 20px;
+    background-color: lightgreen;
+    position: absolute;
+    top: 170px;
+    border-radius: 50%;
+}
