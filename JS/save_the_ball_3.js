@@ -58,6 +58,24 @@ var blocks = setInterval(function(){
         currentBlocks.push(counter);
         counter++;
     }
+    /*
+    if(blockLastTop<500||counter==0){
+        var block = document.createElement("div");
+        var hole = document.createElement("div");
+        block.setAttribute("class", "block");
+        hole.setAttribute("class", "hole");
+        block.setAttribute("id", "block"+counter);
+        hole.setAttribute("id", "hole"+counter);
+        block.style.top = blockLastTop + 100 + "px";
+        hole.style.top = holeLastTop + 100 + "px";
+        var random = Math.floor(Math.random() * 400);
+        hole.style.left = random + "px";
+        game.appendChild(block);
+        game.appendChild(hole);
+        currentBlocks.push(counter);
+        counter++;
+    }
+    */
     var characterTop = parseInt(window.getComputedStyle(character).getPropertyValue("top"));
     var characterLeft = parseInt(window.getComputedStyle(character).getPropertyValue("left"));
     var drop = 0;
