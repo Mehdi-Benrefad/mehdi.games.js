@@ -29,7 +29,7 @@ setInterval(function(){
         
         block.classList.remove('animate');
         hole.classList.remove('animate');
-        character.style.top = 170 + "px";
+        character.style.top = 200 + "px";
         counter=0;
     }
 },10);
