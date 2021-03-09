@@ -53,7 +53,7 @@ var gameover = setInterval(function() {
     let bombeLeft = parseInt(window.getComputedStyle(bombe).getPropertyValue("left"));
     if(bombeLeft<50 && bombeLeft>10 && soliderTop>=130){
         bombe.style.animation = "none";
-        alert("Game Over. score: "+Math.floor(counter/100));
+        alert("Game Over, Score: "+Math.floor(counter/100));
         counter=0;
         score.style.display="none";
         //bombe.style.animation = "bombe 1s infinite linear";

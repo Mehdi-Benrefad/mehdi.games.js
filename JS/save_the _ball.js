@@ -3,6 +3,9 @@ var ball = document.getElementById("ball");
 var balldiv = document.getElementById("balldiv");
 var px = "px";
 var mousedownID = -1; 
+
+
+
 function mousedownLeft(event) {
   if(mousedownID==-1)mousedownID = setInterval(whilemousedownLeft, 2);
 }
@@ -75,7 +78,7 @@ var checkHit = setInterval(function() {
         var shawn = true;
         counter++;
     }else{
-        alert("you missed, score: " + counter);
+        alert("Game Over, Score: " + counter);
         ball.classList.remove("animation");
         var left = ballleft + px;
         ball.style.left = left;

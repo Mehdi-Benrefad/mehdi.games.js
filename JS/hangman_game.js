@@ -58,7 +58,7 @@
 						document.images['pendu'].src="images/pendu/"+coupsManques+".jpg"; 
 					
 						if(coupsManques==7){
-							alert("Vous avez perdu !");
+							alert("Game Over !");
 							for(var i=0; i<tailleMot; i++) tableauMot[i].style.visibility='visible';
 							fini=true;
 
