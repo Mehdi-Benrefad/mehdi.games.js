@@ -108,12 +108,13 @@ body {
     display:none;
 }
 .animatebomb{
-    animation: bombe 2s infinite linear;
+    animation: bombe 1s infinite linear;
 }
 @keyframes bombe{
     0%{left: 500px}
     100%{left: -20px}
 }
+
 p{
     text-align: center;
 }

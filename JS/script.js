@@ -61,6 +61,7 @@ var gameover = setInterval(function() {
       
     }else{
         counter++;
+        //alert(counter);
         document.getElementById("score").innerHTML = Math.floor(counter/100);
     }
     
