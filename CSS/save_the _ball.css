@@ -8,7 +8,7 @@
     border: 3px solid green;
     height: 500px;
     width: 400px;
-    margin: auto;
+    margin-left: 35%;
 }
 .user{
     background-color: lightgreen;
@@ -58,7 +58,7 @@
     position: absolute;
     height: 500px;
 }
-button{
+#restart{
     font-size: 2rem;
     padding: 0.5rem 2rem;
     border: 3px solid green;
@@ -67,7 +67,7 @@ button{
     margin-left: 43%;
     color:green;
 }
-button:hover{
+#restart:hover{
     background-color: green;
     color: white;
     cursor: pointer;
