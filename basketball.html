@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en" id="html" onclick="shootY()">
+<head>
+    <meta charset="UTF-8">
+    <title>Basket-Ball</title>
+    <link rel="stylesheet" href="css/basketball.css">
+    <link rel="icon" href="cup.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+    <link rel="stylesheet" href="CSS/topnav.css">
+    <link rel="stylesheet" href="CSS/footer.css">
+    
+    <link rel="icon" href="images/bombe.png" type="image/x-icon">
+    <!--FONT AWESOME-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+ 
+    <!--GOOGLE FONTS-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Play&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="CSS/under_construction.css">
+</head>
+<body id="body">
+  <div class="topnav" id="myTopnav" style="position: relative;">
+    <a href="index.html" style="float:left;" ><b><i style="color:green">Mehdi</i>.games</b></a>
+    <a href="#" id="enable_topnav_link">Jump Game</a>
+    <a href="jump-game.html" >Jump Game</a>
+    <a href="hangman_game.html">hangman game</a>
+    <a href="save_the_ball_menu.html" class="active">Save The Ball</a>
+    <a href="basketball.html">Basket-Ball</a>
+    <a href="under_construction.html">Snake</a>
+    <a href="under_construction.html">Smart Game</a>
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
+
+  <br><br>
+
+  <h1 style="color:green; text-align:center;">Basket-Ball</h1>
+  <br><br>
+<div class="consignes" style="width: 50%;margin-left: 25%;">
+  <h3 style="text-align: center; color:green">Consignes:</h3>
+    <ul style="list-style-type: none;">
+        
+      <li>1- Cliquer l'ecran pour choisir le positionnement horizontal de la balle </li>
+      <li>2- Cliquer l'ecran une 2eme fois, pour choisir le positionnement vertical de la balle.</li>
+      <li>3- Quand vous marquez dans un cerceau ce dernier disparait.</li>
+      <li>4- si vous reussisez a marquer dans tous les cerceaux, le vous gagnez le jeux.</li>
+    </ul>
+</div>
+
+<br><br><br>
+
+
+ 
+<div class="container" id="container">
+  <div class="cups">
+
+    <div class="row">
+      <img src="images/basket-ball/cerceau.png" alt="" class="cup cup1" id="cup1">
+      <img src="images/basket-ball/cerceau.png" alt="" class="cup cup2" id="cup2">
+      <img src="images/basket-ball/cerceau.png" alt="" class="cup cup3" id="cup3">
+    </div>
+
+    <div class="row row2">
+      <img src="images/basket-ball/cerceau.png" alt="" class="cup cup4" id="cup4">
+      <img src="images/basket-ball/cerceau.png" alt="" class="cup cup5" id="cup5">
+    </div>
+
+    <div class="row row3">
+      <img src="images/basket-ball/cerceau.png" alt="" class="cup cup6" id="cup6">
+    </div>
+
+  </div>
+
+  <div class="shooter"  id="shooter">
+      <img class="ball shootY" id="ball" src="images/basket-ball/ball.png"  alt="">
+  </div>
+</div>
+
+<br><br><br>
+<footer>
+    <div class="footer">
+      <div class="row">
+        <a href="https://github.com/Mehdi-Benrefad"><i class="fa fa-github"></i></a>
+        <a href="#"><i class="fa fa-youtube"></i></a>
+        <a href="https://www.linkedin.com/in/mehdi-benrefad-353460ba/"><i class="fa fa-linkedin"></i></a>
+        <a href="mailto:benrefadmehdi@gmail.com"><i class="fa fa-google"></i></a>
+      </div>
+    
+      <div class="row">
+        <ul>
+          <li><a href="#">Our Services</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Terms & Conditions</a></li>
+        </ul>
+      </div>
+
+      <div class="row">
+        <h3 style="text-align: center;"><i style="color: green;">Created by: &nbsp;</i> MEHDI BENREFAD</h3>
+      </div>
+      
+
+    </div>
+</footer>
+
+</body>
+<script src="js/basketball.js"></script>
+</html>
