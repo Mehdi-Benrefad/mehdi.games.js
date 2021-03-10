@@ -80,7 +80,7 @@ ellipse{
 .ball{
     width: 65px;
     height: 65px;
-    position: relative;
+    position: relative; 
 }
 .shooter{
     position: relative;

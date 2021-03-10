@@ -50,14 +50,15 @@ function shootX(valueY){
             let time = timer();
             alert("Winner!");
             let p = document.createElement("p");
-            p.innerHTML = time + " seconds";
+            p.innerHTML = time + " secondes";
             p.setAttribute("id","time");
-            document.body.appendChild(p);
+            //document.body.appendChild(p);
+            container.appendChild(p);
             let restartBtn = document.createElement("BUTTON");
             restartBtn.innerHTML = "Restart";
             restartBtn.setAttribute("onclick","location.reload()");
             restartBtn.setAttribute("id","restart");
-            document.body.appendChild(restartBtn);
+            container.appendChild(restartBtn);
         }else{
             let reshootBtn = document.createElement("BUTTON");
             reshootBtn.innerHTML = "Reshoot";
