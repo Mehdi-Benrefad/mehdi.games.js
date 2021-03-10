@@ -116,6 +116,24 @@ var blocks = setInterval(function(){
             iblock.style.top = iblockTop - 0.5 + "px";
             ihole.style.top = iblockTop - 0.5 + "px";
         }
+
+        /*
+
+          if(counter>10){
+            iblock.style.top = iblockTop - 1 + "px";
+            ihole.style.top = iblockTop - 1 + "px";
+        }
+        else if(counter>40){
+            iblock.style.top = iblockTop - 0.7 + "px";
+            ihole.style.top = iblockTop - 0.7 + "px";
+        }
+        else{
+            iblock.style.top = iblockTop - 0.5 + "px";
+            ihole.style.top = iblockTop - 0.5 + "px";
+        } 
+
+        */
+       
         if(iblockTop < -20){
             currentBlocks.shift();
             iblock.remove();

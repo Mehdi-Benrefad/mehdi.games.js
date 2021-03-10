@@ -7,6 +7,11 @@ function myFunction() {
     }
   }
 
+  /*
   let e= document.getElementById('enable_topnav_link');
   e.preventDefault(); 
   e.returnValue = false;
+  let e= document.getElementById('enable_topnav_link');
+  e.preventDefault(); 
+  e.returnValue = false;
+  */

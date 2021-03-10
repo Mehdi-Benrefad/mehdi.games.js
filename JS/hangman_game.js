@@ -8,6 +8,7 @@
 				var lettresTrouvees=0;		// Le nombre de lettres trouvees
 				var fini=false;				// true si le jeu est termine
 				
+				//Mots Possibles
 				mots[0]="BENREFAD";
 				mots[1]="INGENIEUR";
 				mots[2]="POMPIER";
@@ -21,6 +22,9 @@
 				mots[10]="IDIOT";
 				mots[11]="VALIDATION";
 				mots[12]="RATTRAPPAGE";
+				mots[13]="RETARD";
+				mots[14]="LARAVEL";
+				mots[15]="DEVELOPPEUR";
 				
 				
 				motSecret=mots[now.getSeconds() % mots.length];
