@@ -2,6 +2,26 @@ var solider = document.getElementById("solider");
 var bombe = document.getElementById("bombe");
 var counter=0;
 
+function sleep(ms) {
+    return new Promise(resolve => setTimeout(resolve, ms));
+  }
+ 
+  /*
+  async function demo() {
+    console.log('Taking a break...');
+    await sleep(2000);
+    console.log('Two seconds later, showing sleep in a loop...');
+  
+    // Sleep in loop
+    for (let i = 0; i < 5; i++) {
+      if (i === 3)
+        await sleep(3000);
+      console.log(i);
+    }
+  }
+  */
+
+
 function jump(){
     if(solider.classList == "animate"){return}
     solider.classList.add("animate");
@@ -20,7 +40,9 @@ document.addEventListener("keydown", event => {
 });
 
 
-function animatebomb(){
+async function animatebomb(){
+    await sleep(500);
+    console.log('Two seconds later, showing sleep in a loop...');
     bombe.classList.add("animatebomb");
     bombe.style.animation = "bombe 1s infinite linear";
     counter=0;
