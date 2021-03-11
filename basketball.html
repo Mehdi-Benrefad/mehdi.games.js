@@ -1,28 +1,29 @@
 <!DOCTYPE html>
 <html lang="en" id="html" onclick="shootY()">
 <head>
-    <meta charset="UTF-8">
-    <title>Basket-Ball</title>
-    <link rel="stylesheet" href="css/basketball.css">
-    <link rel="icon" href="cup.png">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   
-    <link rel="stylesheet" href="CSS/topnav.css">
-    <link rel="stylesheet" href="CSS/footer.css">
-    
-    <link rel="icon" href="images/bombe.png" type="image/x-icon">
-    <!--FONT AWESOME-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <meta charset="UTF-8">
+  <title>Basket-Ball</title>
+  <link rel="stylesheet" href="css/basket-ball.css">
+  <link rel="icon" href="cup.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
  
-    <!--GOOGLE FONTS-->
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Play&display=swap" rel="stylesheet">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="CSS/under_construction.css">
-    <script src="js/basketball.js"></script>
+  <link rel="stylesheet" href="CSS/topnav.css">
+  <link rel="stylesheet" href="CSS/footer.css">
+  
+  <link rel="icon" href="images/bombe.png" type="image/x-icon">
+  <!--FONT AWESOME-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <!--GOOGLE FONTS-->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Play&display=swap" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="CSS/under_construction.css">
+  <script src="js/basketball.js"></script>
 </head>
 <body id="body">
+
   <div class="topnav" id="myTopnav" style="position: relative;">
     <a href="index.html" style="float:left;" ><b><i style="color:green">Mehdi</i>.games</b></a>
     <a href="#" id="enable_topnav_link">Jump Game</a>
@@ -53,38 +54,30 @@
 </div>
 
 <br><br><br>
- 
-
- 
-<div class="container" id="container">
+  
+  <div class="container" id="container">
   <div class="cups">
-
-    <div class="row">
-      <img src="images/basket-ball/cerceau.png" alt="" class="cup cup1" id="cup1">
-      <img src="images/basket-ball/cerceau.png" alt="" class="cup cup2" id="cup2">
-      <img src="images/basket-ball/cerceau.png" alt="" class="cup cup3" id="cup3">
-    </div>
-
-    <div class="row row2">
-      <img src="images/basket-ball/cerceau.png" alt="" class="cup cup4" id="cup4">
-      <img src="images/basket-ball/cerceau.png" alt="" class="cup cup5" id="cup5">
-    </div>
-
-    <div class="row row3">
-      <img src="images/basket-ball/cerceau.png" alt="" class="cup cup6" id="cup6">
-    </div>
-
+  <div class="row">
+   <img src="images/basket-ball/cerceau.png" alt="" class="cup cup1" id="cup1">
+   <img src="images/basket-ball/cerceau.png" alt="" class="cup cup2" id="cup2">
+   <img src="images/basket-ball/cerceau.png" alt="" class="cup cup3" id="cup3">
   </div>
-
-  <div class="shooter"  id="shooter">
-      <img class="ball shootY" id="ball" src="images/basket-ball/ball.png"  alt="">
+  <div class="row row2">
+   <img src="images/basket-ball/cerceau.png" alt="" class="cup cup4" id="cup4">
+   <img src="images/basket-ball/cerceau.png" alt="" class="cup cup5" id="cup5">
+  </div>
+  <div class="row row3">
+   <img src="images/basket-ball/cerceau.png" alt="" class="cup cup6" id="cup6">
+  </div>
+  </div>
+   <div class="shooter"  id="shooter">
+    <svg class="ball shootY" id="ball">
+      <ellipse cx="25" cy="25" rx="24" ry="24"/>
+    </svg>
   </div>
 </div>
 
-<br><br><br>
-<h3 style="text-align: center;"><i style="color: green;">Created by:</i> MEHDI BENREFAD</h3>
-
-    <br><br><br>
+  <br><br><br>
 <footer>
     <div class="footer">
       <div class="row">
@@ -111,4 +104,5 @@
 </footer>
 
 </body>
+<script src="js/basket-ball.js"></script>
 </html>

@@ -45,15 +45,13 @@ function shootX(valueY){
     if(140<topInt && topInt<180 && -45<leftInt && leftInt<45){
         removeCup("6");
     }
-    
     setTimeout(function(){
         if(cupsOut.length == 6){
             let time = timer();
             alert("Winner!");
             let p = document.createElement("p");
-            p.innerHTML = time + " secondes";
+            p.innerHTML = time + " seconds";
             p.setAttribute("id","time");
-            //document.body.appendChild(p);
             container.appendChild(p);
             let restartBtn = document.createElement("BUTTON");
             restartBtn.innerHTML = "Restart";
@@ -68,16 +66,6 @@ function shootX(valueY){
             container.appendChild(reshootBtn);
         }
     },1000);
-    /*
-        function shootY(){
-        let top = window.getComputedStyle(ball).getPropertyValue("top");
-        ball.classList.remove("shootY");
-        ball.classList.add("shootX");
-        ball.style.top = top;
-        let onclick = "shootX('".concat(top.toString(), "')");
-        html.setAttribute("onclick", onclick);    
-}
-    */
 }
 
 function removeCup(cup){

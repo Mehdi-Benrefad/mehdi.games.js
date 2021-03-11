@@ -11,6 +11,13 @@ body{
     overflow-x: hidden;
     display: block;
 }
+.container{
+    border:3px solid green;
+    height:550px;
+    width:400px;
+    padding-top: 10px;
+    margin-left:35%;
+}
 ellipse{
     fill:hsl(0, 0%, 90%); 
     stroke: black; 
@@ -22,7 +29,7 @@ ellipse{
     padding: 1rem 2rem;
     border-radius: 0.3rem;
     display: block;
-    color: green; 
+    color: black; 
     border: 3px solid green;
     background-color: white;
 }
@@ -31,15 +38,6 @@ ellipse{
     background-color: green;
     color: white;
 }
-
-.container{
-    border:3px solid green;
-    height:550px;
-    width:400px;
-    padding-top: 10px;
-    margin-left:35%;
-}
-
 #time {
   margin: auto;
   display: block;
@@ -78,9 +76,9 @@ ellipse{
     top: 10rem;
 }
 .ball{
-    width: 65px;
-    height: 65px;
-    position: relative; 
+    width: 50px;
+    height: 50px;
+    position: relative;
 }
 .shooter{
     position: relative;
