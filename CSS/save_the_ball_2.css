@@ -12,7 +12,22 @@
     position: relative;
     
 }
-
+.consignestitle{
+    text-align: center;
+    color:green
+}
+h1{
+    color:green; 
+    text-align:center;
+}
+.change_game{
+    background-color: #4CAF50;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none; 
+    cursor: pointer;
+}
 #restart
 {
     color: green;

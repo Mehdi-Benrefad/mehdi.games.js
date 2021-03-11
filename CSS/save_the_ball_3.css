@@ -9,6 +9,26 @@
     margin-left: 35%;
     overflow: hidden;
 }
+h1{
+    color:green; 
+    text-align:center;
+}
+.change_game{
+    background-color: #4CAF50;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none; 
+    cursor: pointer;
+}
+.consignes{
+    width: 50%;
+    margin-left: 25%;
+}
+.consignestitle{
+    text-align: center;
+     color:green;
+}
 #restart
 {
     color: green;

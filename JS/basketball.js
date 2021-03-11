@@ -45,6 +45,7 @@ function shootX(valueY){
     if(140<topInt && topInt<180 && -45<leftInt && leftInt<45){
         removeCup("6");
     }
+    
     setTimeout(function(){
         if(cupsOut.length == 6){
             let time = timer();
