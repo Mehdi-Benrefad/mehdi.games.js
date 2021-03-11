@@ -51,16 +51,16 @@ ellipse{
     
 }
 .cups{
-    margin: auto; 
-    width: 310px;
+    margin: auto !important; 
+    width: 310px !important;
 }
 .cup{
-    width: 100px;
-    position: relative;
+    width: 100px !important;
+    position: relative !important;
 }
 .row2{
-    margin-top: -10rem;
-    margin-left: 50px;
+    margin-top: -10rem !important;
+    margin-left: 50px !important;
 }
 .row3{
     margin-top: -10rem;
