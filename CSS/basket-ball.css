@@ -1,57 +1,57 @@
 :root{
-    --top:0px;
-    --top325:325px;
+    --top:0px !important;
+    --top325:325px !important;
 }
 *{
-    padding: 0;
-    margin: 0;
-    outline: none;
+    padding: 0 !important;
+    margin: 0 !important;
+    outline: none !important;
 }
 body{
-    overflow-x: hidden;
-    display: block;
+    overflow-x: hidden !important;
+    display: block !important;
 }
 .container{
-    border:3px solid green;
-    height:550px;
-    width:400px;
-    padding-top: 10px;
-    margin-left:35%;
+    border:3px solid green !important;
+    height:550px !important;
+    width:400px !important;
+    padding-top: 10px !important;
+    margin-left:35% !important;
 }
 ellipse{
-    fill:hsl(0, 0%, 90%); 
-    stroke: black; 
-    stroke-weight: 1px;
+    fill:hsl(0, 0%, 90%) !important; 
+    stroke: black !important; 
+    stroke-weight: 1px !important;
 }
 #reshoot, #restart{
-    margin: 10rem auto;
-    font-size: 2rem;
-    padding: 1rem 2rem;
-    border-radius: 0.3rem;
-    display: block;
-    color: green; 
-    border: 3px solid green;
-    background-color: white;
+    margin: 10rem auto !important;
+    font-size: 2rem !important;
+    padding: 1rem 2rem !important;
+    border-radius: 0.3rem !important;
+    display: block !important;
+    color: green !important; 
+    border: 3px solid green !important;
+    background-color: white !important;
 }
 #reshoot:hover, #restart:hover{
-    cursor: pointer;
-    background-color: green;
-    color: white;
+    cursor: pointer !important;
+    background-color: green !important;
+    color: white !important;
 }
 #time {
-  margin: auto;
-  display: block;
-  text-align: center;
-  font-size: 3rem;
-  font-family: sans-serif;
-  font-weight: bold;
+  margin: auto !important;
+  display: block !important;
+  text-align: center !important;
+  font-size: 3rem !important;
+  font-family: sans-serif !important;
+  font-weight: bold !important;
 }
 
 #time{
     
 }
 .cups{
-    margin: auto !important; 
+    margin: auto !important ; 
     width: 310px !important;
 }
 .cup{
@@ -63,32 +63,32 @@ ellipse{
     margin-left: 50px !important;
 }
 .row3{
-    margin-top: -10rem;
-    margin-left: 100px;
+    margin-top: -10rem !important;
+    margin-left: 100px !important;
 }
 .cup4{
-    top:5rem;
+    top:5rem !important;
 }
 .cup5{
-    top:5rem;
+    top:5rem !important;
 }
 .cup6{
-    top: 10rem;
+    top: 10rem !important;
 }
 .ball{
-    width: 50px;
-    height: 50px;
-    position: relative;
+    width: 50px !important;
+    height: 50px !important;
+    position: relative !important;
 }
 .shooter{
-    position: relative;
-    top: 200px;
-    left: 125px;
-    width: 300px;
-    margin: auto;
+    position: relative !important;
+    top: 200px !important;
+    left: 125px !important;
+    width: 300px !important;
+    margin: auto !important;
 }
 .shootX{
-    animation: shootX 1s infinite linear;
+    animation: shootX 1s infinite linear !important;
 }
 @keyframes shootX{
     0%{left:0px}
@@ -98,7 +98,7 @@ ellipse{
     100%{left:0px}
 }
 .shootY{
-    animation: shootY 1s infinite linear;
+    animation: shootY 1s infinite linear !important;
 }
 @keyframes shootY{
     0%{top:0px}
@@ -106,16 +106,16 @@ ellipse{
     100%{top:0px}
 }
 .fadeAway{
-    animation: fadeAway 1s;
-    opacity: 0
+    animation: fadeAway 1s !important;
+    opacity: 0 !important;
 }
 @keyframes fadeAway{
     0%{opacity: 1}
     100%{opacity: 0}
 }
 .Shoot{
-    animation: Shoot 1s;
-    animation-timing-function: ease;
+    animation: Shoot 1s !important;
+    animation-timing-function: ease !important;
 }
 @keyframes Shoot{
     0%{top: var(--top)}
