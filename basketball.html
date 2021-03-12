@@ -22,6 +22,18 @@
   <link rel="stylesheet" href="CSS/under_construction.css">
   <script src="JS/topnav.js"></script>
   <style>
+   
+    .container{
+        border:3px solid green;
+        height:550px;
+        width:400px;
+        padding-top: 10px;
+        margin-left:35%;
+    }
+    :root{
+        --top:0px;
+        --top325:325px;
+    }
     *{
         padding: 0;
         margin: 0;
@@ -30,13 +42,6 @@
     body{
         overflow-x: hidden;
         display: block;
-    }
-    .container{
-        border:3px solid green;
-        height:550px;
-        width:400px;
-        padding-top: 10px;
-        margin-left:35%;
     }
     ellipse{
         fill:hsl(0, 0%, 90%); 
@@ -71,16 +76,16 @@
         
     }
     .cups{
-        margin: auto !important; 
-        width: 310px !important;
+        margin: auto; 
+        width: 310px;
     }
     .cup{
-        width: 100px !important;
-        position: relative !important;
+        width: 100px;
+        position: relative;
     }
     .row2{
-        margin-top: -10rem !important;
-        margin-left: 50px !important;
+        margin-top: -10rem;
+        margin-left: 50px;
     }
     .row3{
         margin-top: -10rem;
@@ -138,8 +143,8 @@
         animation-timing-function: ease;
     }
     @keyframes Shoot{
-        0%{top: 0px;}
-        100%{top: 325px;}
+        0%{top: var(--top)}
+        100%{top: var(--top325)}
     }
     
   </style>
