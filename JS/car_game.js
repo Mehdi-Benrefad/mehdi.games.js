@@ -64,3 +64,38 @@ function start(){
 
 document.getElementById("right").addEventListener("touchstart", moveRight);
 document.getElementById("left").addEventListener("touchstart", moveLeft);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+var character = document.getElementById("character");
+function moveLeft(){
+    let left = parseInt(window.getComputedStyle(character).getPropertyValue("left"));
+    left -= 100;
+    if(left>=0){
+        character.style.left = left + "px";
+    }
+}
+function moveRight(){
+    let left = parseInt(window.getComputedStyle(character).getPropertyValue("left"));
+    left += 100;
+    if(left<300){
+        character.style.left = left + "px";
+    }
+}
+*/
