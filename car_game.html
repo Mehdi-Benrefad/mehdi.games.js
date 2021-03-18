@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Cars</title>
+    <link rel="stylesheet" href="css/car_game.css">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link rel="stylesheet" href="CSS/style.css">
+		<link rel="stylesheet" href="CSS/topnav.css">
+		<link rel="stylesheet" href="CSS/footer.css">
+		<link rel="icon" href="images/bombe.png" type="image/x-icon">
+
+		<!--FONT AWESOME-->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+		<!--GOOGLE FONTS-->
+		<link rel="preconnect" href="https://fonts.gstatic.com">
+		<link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Play&display=swap" rel="stylesheet"> 
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link rel="stylesheet" href="CSS/under_construction.css">
+		<script src="JS/hangman_game.js"></script>
+		<script src="JS/topnav.js"></script>
+</head>
+<body>
+
+    <div class="topnav" id="myTopnav">
+        <a href="index.html" style="float:left;" ><b><i style="color:green">Mehdi</i>.games</b></a>
+        <a href="#" id="enable_topnav_link">Jump Game</a>
+        <a href="jump-game.html" >Jump Game</a>
+        <a href="hangman_game.html" >hangman game</a>
+        <a href="save_the_ball_menu.html" >Save The Ball</a>
+        <a href="basketball.html">Basket-Ball</a>
+        <a href="car_game.html" class="active">cars</a>
+        <a href="under_construction.html">Snake</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+        </a>
+    </div>
+
+    <br><br>
+    <h1 style="color:green; text-align:center;">Car Game</h1>
+    <br><br>
+    <br><br>
+    
+    <div class="consignes">
+        <h3 style="color: green;text-align:center;">Consignes</h3>
+
+        <p>Bouger la voiture a droite et a gauche en utilisant les fleches du clavier bour eviter la roue brulante</p>
+    </div>
+    <br><br><br>
+
+
+    <div id="game">
+        <div style="position: absolute; width:100px; height:500px;  background-color:green;overflow: hidden;">
+            <img src="images/car_game/tree.png" width="50" height="80" alt=""><br>
+            <img src="images/car_game/tree.png" class="switch_tree"  width="50" height="80" alt="">
+            <img src="images/car_game/tree.png" width="50" height="80" alt="">
+            <img src="images/car_game/tree.png" class="switch_tree" width="50" height="80" alt="">
+            <img src="images/car_game/tree.png" width="50" height="80" alt="">
+            <img src="images/car_game/tree.png" class="switch_tree" width="50" height="80" alt="">
+        </div>
+        <div style="margin-left:400px; position: absolute; width:100px; height:500px; overflow: hidden;background-color:green; ">
+            <img src="images/car_game/tree.png" width="50" height="80" alt=""><br>
+            <img src="images/car_game/tree.png" class="switch_tree" width="50" height="80" alt="">
+            <img src="images/car_game/tree.png" width="50" height="80" alt="">
+            <img src="images/car_game/tree.png" class="switch_tree" width="50" height="80" alt="">
+            <img src="images/car_game/tree.png" width="50" height="80" alt="">
+            <img src="images/car_game/tree.png" class="switch_tree" width="50" height="80" alt="">
+        </div>
+        <div style="margin-left:100px;position: absolute; width:98px; height:500px;  background-color:#282828; border-right:3px dashed white;"></div>
+        <div style="margin-left:200px; position: absolute; width:98px; height:500px;  background-color:#181818; border-right:3px dashed white;"></div>
+        <div style=" margin-left:300px;position: absolute; width:98px; height:500px;  background-color:#282828;"></div>
+        <div id="left"></div>
+        <div id="right"></div>
+        <img id="block" src="images/car_game/ttt.png">
+        <img id="character" src="images/car_game/tt.png">
+        
+    </div>
+    <button id="restart" onclick="start()">start</button>
+    <br><br>
+
+    <h3 style="text-align: center;"><i style="color: green;">Created by:</i> MEHDI BENREFAD</h3>
+
+<br><br><br>
+
+    <footer>
+        <div class="footer">
+        <div class="row">
+        <a href="https://github.com/Mehdi-Benrefad"><i class="fa fa-github"></i></a>
+        <a href="#"><i class="fa fa-youtube"></i></a>
+        <a href="https://www.linkedin.com/in/mehdi-benrefad-353460ba/"><i class="fa fa-linkedin"></i></a>
+        <a href="mailto:benrefadmehdi@gmail.com"><i class="fa fa-google"></i></a>
+        </div>
+        
+        <div class="row">
+            <ul>
+                <li><a href="#">Our Services</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Terms & Conditions</a></li>
+            </ul>
+        </div>
+    
+        <div class="row">
+            <h3 style="text-align: center;"><i style="color: green;">Created by: &nbsp;</i> MEHDI BENREFAD</h3>
+        </div>
+        <br>
+
+    <div class="row" style="margin-left: -40%;margin-bottom:0px !important;">
+      <i class="fa fa-copyright" aria-hidden="true"></i>  2021  Benrefad Mehdi
+      
+    </div>
+    
+        </div>
+    </footer>
+
+</body>
+<script src="js/car_game.js"></script>
+</html>
