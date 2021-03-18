@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Cars</title>
-    <link rel="stylesheet" href="css/car_game.css">
+    
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -23,6 +23,92 @@
 		<link rel="stylesheet" href="CSS/under_construction.css">
 		<script src="JS/hangman_game.js"></script>
 		<script src="JS/topnav.js"></script>
+
+
+
+        <style>
+            *{
+                padding: 0;
+                margin: 0;
+            }
+            #restart{
+                font-size: 2rem;
+                padding: 0.5rem 2rem;
+                border: 3px solid green;
+                border-radius: 0.3rem;
+                margin: 1rem auto;
+                margin-left: 43%;
+                color:green;
+            }
+            #restart:hover{
+                background-color: green;
+                color: white;
+                cursor: pointer;
+            }
+            
+            #game{
+                overflow: hidden;
+                width: 500px;
+                height: 500px;
+                margin: auto;
+                box-sizing: border-box;
+            }
+            #character{
+                width: 100px;
+                height: 100px;
+                position: relative;
+                top: 400px;
+                left: 0px;
+                animation: rotation 1s infinite linear;
+                
+            }
+            
+            @keyframes rotation {
+                0% {
+                  transform: rotate(-7deg);
+                }
+                50% {
+                  transform: rotate(7deg);
+                }
+                100%{
+                    transform: rotate(-7deg);
+                }
+              }
+              
+            .switch_tree{
+                margin-left: 30px;
+            }
+            
+            
+            #white{
+                top: 500px;
+                z-index: 100;
+                position: absolute;
+                width: 300px;
+                height: 130px;
+                background-color: white;
+            }
+            #block{
+                width: 100px;
+                height: 100px;
+                top: 500px;
+                
+                position: relative;
+                animation: slide 1s infinite linear;
+            }
+            @keyframes slide{
+                0%{top:-100px};
+                100%{top:500px};
+            }
+            #left, #right{
+                width:50%;
+                position: absolute;
+                height: 500px;
+            }
+            #right{
+                left: 50%;
+            }
+        </style>
 </head>
 <body>
 
@@ -117,5 +203,64 @@
     </footer>
 
 </body>
-<script src="js/car_game.js"></script>
+<script>
+    document.addEventListener("keydown", event => {
+        if(event.key==="ArrowLeft"){moveLeft();}
+        if(event.key==="ArrowRight"){moveRight();}
+      });
+      
+      
+      var character = document.getElementById("character");
+      function moveLeft(){
+          let left = parseInt(window.getComputedStyle(character).getPropertyValue("left"));
+          left -= 100;
+          if(left>=0){
+              character.style.left = left + "px";
+          }
+      }
+      function moveRight(){
+          let left = parseInt(window.getComputedStyle(character).getPropertyValue("left"));
+          left += 100;
+          if(left<300){
+              character.style.left = left + "px";
+          }
+      }
+      var block = document.getElementById("block");
+      block.style.animation = "none";
+      var counter = 0;
+      
+      function start(){
+         
+          
+          block.style.animation = "slide 1s infinite linear";
+          block.addEventListener('animationiteration', () => {
+              var random = Math.floor(Math.random() * 3)+1;
+              
+                  left = random * 100;
+              
+              block.style.left = left + "px";
+              counter++;
+            
+          });
+          setInterval(function(){
+              var characterLeft = parseInt(window.getComputedStyle(character).getPropertyValue("left"));
+              var blockLeft = parseInt(window.getComputedStyle(block).getPropertyValue("left"));
+              var blockTop = parseInt(window.getComputedStyle(block).getPropertyValue("top"));
+              if(characterLeft==blockLeft-100 && blockTop<500 && blockTop>300){
+                  alert("Game over. Score: " + counter);
+                  block.style.animation = "none";
+                  counter=0;
+                  
+              }
+              
+          },1);
+      
+      
+      }
+      
+      document.getElementById("right").addEventListener("touchstart", moveRight);
+      document.getElementById("left").addEventListener("touchstart", moveLeft);
+      
+</script>
+
 </html>
