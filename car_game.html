@@ -140,21 +140,21 @@
 
 
     <div id="game">
-        <div style="position: absolute; width:100px; height:500px;  background-color:green;overflow: hidden;">
-            <img src="images/car_game/tree.png" width="50" height="80" alt=""><br>
-            <img src="images/car_game/tree.png" class="switch_tree"  width="50" height="80" alt="">
-            <img src="images/car_game/tree.png" width="50" height="80" alt="">
-            <img src="images/car_game/tree.png" class="switch_tree" width="50" height="80" alt="">
-            <img src="images/car_game/tree.png" width="50" height="80" alt="">
-            <img src="images/car_game/tree.png" class="switch_tree" width="50" height="80" alt="">
+        <div style="position: absolute; width:100px; height:500px;  background-color:green;overflow: hidden;" id="leftpart">
+            <img src="images/car_game/tree.png" id="image1" width="50" height="80" alt=""><br>
+            <img src="images/car_game/tree.png" id="image2" class="switch_tree"  width="50" height="80" alt="">
+            <img src="images/car_game/tree.png" id="image3" width="50" height="80" alt="">
+            <img src="images/car_game/tree.png" id="image4" class="switch_tree" width="50" height="80" alt="">
+            <img src="images/car_game/tree.png" id="image5" width="50" height="80" alt="">
+            <img src="images/car_game/tree.png" id="image6" class="switch_tree" width="50" height="80" alt="">
         </div>
-        <div style="margin-left:400px; position: absolute; width:100px; height:500px; overflow: hidden;background-color:green; ">
-            <img src="images/car_game/tree.png" width="50" height="80" alt=""><br>
-            <img src="images/car_game/tree.png" class="switch_tree" width="50" height="80" alt="">
-            <img src="images/car_game/tree.png" width="50" height="80" alt="">
-            <img src="images/car_game/tree.png" class="switch_tree" width="50" height="80" alt="">
-            <img src="images/car_game/tree.png" width="50" height="80" alt="">
-            <img src="images/car_game/tree.png" class="switch_tree" width="50" height="80" alt="">
+        <div style="margin-left:400px; position: absolute; width:100px; height:500px; overflow: hidden;background-color:green; " id="rightpart">
+            <img src="images/car_game/tree.png" id="image7" width="50" height="80" alt=""><br>
+            <img src="images/car_game/tree.png" id="image8" class="switch_tree" width="50" height="80" alt="">
+            <img src="images/car_game/tree.png" id="image9" width="50" height="80" alt="">
+            <img src="images/car_game/tree.png" id="image10" class="switch_tree" width="50" height="80" alt="">
+            <img src="images/car_game/tree.png" id="image11" width="50" height="80" alt="">
+            <img src="images/car_game/tree.png" id="image12" class="switch_tree" width="50" height="80" alt="">
         </div>
         <div style="margin-left:100px;position: absolute; width:98px; height:500px;  background-color:#282828; border-right:3px dashed white;"></div>
         <div style="margin-left:200px; position: absolute; width:98px; height:500px;  background-color:#181818; border-right:3px dashed white;"></div>
@@ -236,7 +236,46 @@
               
               block.style.left = left + "px";
               counter++;
-            
+        
+                if (counter%50==0 ){
+                    if(document.getElementById("leftpart").style.backgroundColor=="green"){
+                        document.getElementById("image1").src="images/car_game/tree3.png";
+                        document.getElementById("image2").src="images/car_game/tree3.png";
+                        document.getElementById("image3").src="images/car_game/tree3.png";
+                        document.getElementById("image4").src="images/car_game/tree3.png";
+                        document.getElementById("image5").src="images/car_game/tree3.png";
+                        document.getElementById("image6").src="images/car_game/tree3.png";
+                        document.getElementById("image7").src="images/car_game/tree3.png";
+                        document.getElementById("image8").src="images/car_game/tree3.png";
+                        document.getElementById("image9").src="images/car_game/tree3.png";
+                        document.getElementById("image10").src="images/car_game/tree3.png";
+                        document.getElementById("image11").src="images/car_game/tree3.png";
+                        document.getElementById("image12").src="images/car_game/tree3.png";
+        
+        
+                        document.getElementById('leftpart').style.backgroundColor="#191970";
+                        document.getElementById('rightpart').style.backgroundColor="#191970";
+                    }else{
+
+                        document.getElementById("image1").src="images/car_game/tree.png";
+                        document.getElementById("image2").src="images/car_game/tree.png";
+                        document.getElementById("image3").src="images/car_game/tree.png";
+                        document.getElementById("image4").src="images/car_game/tree.png";
+                        document.getElementById("image5").src="images/car_game/tree.png";
+                        document.getElementById("image6").src="images/car_game/tree.png";
+                        document.getElementById("image7").src="images/car_game/tree.png";
+                        document.getElementById("image8").src="images/car_game/tree.png";
+                        document.getElementById("image9").src="images/car_game/tree.png";
+                        document.getElementById("image10").src="images/car_game/tree.png";
+                        document.getElementById("image11").src="images/car_game/tree.png";
+                        document.getElementById("image12").src="images/car_game/tree.png";
+        
+        
+                        document.getElementById('leftpart').style.backgroundColor="green";
+                        document.getElementById('rightpart').style.backgroundColor="green";
+                    }
+                    
+                }
           });
           setInterval(function(){
               var characterLeft = parseInt(window.getComputedStyle(character).getPropertyValue("left"));

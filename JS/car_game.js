@@ -34,6 +34,87 @@ function start(){
         
         block.style.left = left + "px";
         counter++;
+
+        if (counter%50==0 ){
+            if(document.getElementById("leftpart").style.backgroundColor=="green"){
+                document.getElementById("image1").src="images/car_game/treenight.png";
+                document.getElementById("image2").src="images/car_game/treenight.png";
+                document.getElementById("image3").src="images/car_game/treenight.png";
+                document.getElementById("image4").src="images/car_game/treenight.png";
+                document.getElementById("image5").src="images/car_game/treenight.png";
+                document.getElementById("image6").src="images/car_game/treenight.png";
+                document.getElementById("image7").src="images/car_game/treenight.png";
+                document.getElementById("image8").src="images/car_game/treenight.png";
+                document.getElementById("image9").src="images/car_game/treenight.png";
+                document.getElementById("image10").src="images/car_game/treenight.png";
+                document.getElementById("image11").src="images/car_game/treenight.png";
+                document.getElementById("image12").src="images/car_game/treenight.png";
+
+
+                document.getElementById('leftpart').style.backgroundColor="#191970";
+                document.getElementById('rightpart').style.backgroundColor="#191970";
+            }else{
+
+                document.getElementById("image1").src="images/car_game/tree.png";
+                document.getElementById("image2").src="images/car_game/tree.png";
+                document.getElementById("image3").src="images/car_game/tree.png";
+                document.getElementById("image4").src="images/car_game/tree.png";
+                document.getElementById("image5").src="images/car_game/tree.png";
+                document.getElementById("image6").src="images/car_game/tree.png";
+                document.getElementById("image7").src="images/car_game/tree.png";
+                document.getElementById("image8").src="images/car_game/tree.png";
+                document.getElementById("image9").src="images/car_game/tree.png";
+                document.getElementById("image10").src="images/car_game/tree.png";
+                document.getElementById("image11").src="images/car_game/tree.png";
+                document.getElementById("image12").src="images/car_game/tree.png";
+
+
+                document.getElementById('leftpart').style.backgroundColor="green";
+                document.getElementById('rightpart').style.backgroundColor="green";
+            }
+            
+        }
+        /*
+         if (counter%50==0 ){
+                    if(document.getElementById("leftpart").style.backgroundColor=="green"){
+                        document.getElementById("image1").src="images/car_game/treenight.png";
+                        document.getElementById("image2").src="images/car_game/treenight.png";
+                        document.getElementById("image3").src="images/car_game/treenight.png";
+                        document.getElementById("image4").src="images/car_game/treenight.png";
+                        document.getElementById("image5").src="images/car_game/treenight.png";
+                        document.getElementById("image6").src="images/car_game/treenight.png";
+                        document.getElementById("image7").src="images/car_game/treenight.png";
+                        document.getElementById("image8").src="images/car_game/treenight.png";
+                        document.getElementById("image9").src="images/car_game/treenight.png";
+                        document.getElementById("image10").src="images/car_game/treenight.png";
+                        document.getElementById("image11").src="images/car_game/treenight.png";
+                        document.getElementById("image12").src="images/car_game/treenight.png";
+        
+        
+                        document.getElementById('leftpart').style.backgroundColor="#191970";
+                        document.getElementById('rightpart').style.backgroundColor="#191970";
+                    }else{
+
+                        document.getElementById("image1").src="images/car_game/tree.png";
+                        document.getElementById("image2").src="images/car_game/tree.png";
+                        document.getElementById("image3").src="images/car_game/tree.png";
+                        document.getElementById("image4").src="images/car_game/tree.png";
+                        document.getElementById("image5").src="images/car_game/tree.png";
+                        document.getElementById("image6").src="images/car_game/tree.png";
+                        document.getElementById("image7").src="images/car_game/tree.png";
+                        document.getElementById("image8").src="images/car_game/tree.png";
+                        document.getElementById("image9").src="images/car_game/tree.png";
+                        document.getElementById("image10").src="images/car_game/tree.png";
+                        document.getElementById("image11").src="images/car_game/tree.png";
+                        document.getElementById("image12").src="images/car_game/tree.png";
+        
+        
+                        document.getElementById('leftpart').style.backgroundColor="green";
+                        document.getElementById('rightpart').style.backgroundColor="green";
+                    }
+                    
+                }
+        */
        /* 
         if(counter<40){
             block.style.animation = "slide 1s infinite linear";
