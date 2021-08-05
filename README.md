@@ -1,5 +1,5 @@
 # mehdi.games.js
 Games Website
 
-Deploiment:
+Deployment:
 https://mehdi-benrefad.github.io/mehdi.games.js/
